@@ -2,7 +2,7 @@
 # It attaches strings and variabes together for dynamic output
 cty_name = "Kigali"
 crt_year = 2026    # storing each data in variables
-_name = "Henry"
+name = "Henry"
 
 # f-strings will handle non string data type and embed variables directly with in braces.
 print(f"Welcome to {cty_name}! The year is {crt_year}, and our newest resident is {name}.")
