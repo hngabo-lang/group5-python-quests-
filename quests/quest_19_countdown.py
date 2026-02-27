@@ -9,4 +9,4 @@ for count in range(10, 0, -1):
 
 # Launch!
 print("-" * 30)
-print("🚀 Blastoff!")
+print(" Blastoff!")
