@@ -1,0 +1,75 @@
+def start():
+    """The starting location of the adventure."""
+    print("=" * 50)
+    print("  Welcome to THE LOST KINGDOM Adventure!")
+    print("=" * 50)
+    print("\nYou wake up at the edge of a dark forest.")
+    print("A mysterious castle looms in the distance.")
+    print("Two paths stretch before you.\n")
+
+    choice = input("Do you head to the 'castle' or explore the 'forest'? ").strip().lower()
+
+    if choice == "castle":
+        visit_castle()
+    elif choice == "forest":
+        explore_forest()
+    else:
+        print("\nYou sit down confused and a passing merchant gives you soup. The End (somehow).")
+
+def visit_castle():
+    """The castle location - leads to two possible endings."""
+    print("\nYou approach the towering castle gates.")
+    print("A guard blocks your path.")
+    print("'State your business!' he growls.\n")
+
+    choice = input("Do you 'fight' the guard or try to 'bribe' him? ").strip().lower()
+
+    if choice == "fight":
+        ending_defeat()
+    elif choice == "bribe":
+        print("\nYou hand over your last gold coin.")
+        print("The guard steps aside with a grin.")
+        print("Inside, you discover the lost treasure of the kingdom!")
+        ending_victory()
+    else:
+        print("\nYou awkwardly wave and back away slowly.")
+        ending_defeat()
+
+def explore_forest():
+    """The forest location - leads to two possible endings."""
+    print("\nYou venture deep into the forest.")
+    print("You stumble upon a sleeping dragon guarding a golden chest.")
+    print("Your heart pounds loudly.\n")
+
+    choice = input("Do you try to 'sneak' past the dragon or 'run' away? ").strip().lower()
+
+    if choice == "sneak":
+        print("\nYou tiptoe carefully around the dragon...")
+        print("Your hand closes around the golden chest handle...")
+        print("The dragon snores. You made it!")
+        ending_victory()
+    elif choice == "run":
+        print("\nYou bolt through the trees — straight into a mud pit.")
+        ending_defeat()
+    else:
+        print("\nYou freeze completely. The dragon wakes up and yawns fire. Oops.")
+        ending_defeat()
+
+def ending_victory():
+    """The winning ending."""
+    print("\n" + "🏆 " * 15)
+    print("\n  *** VICTORY! ***")
+    print("  You have claimed the treasure and saved the kingdom!")
+    print("  Songs will be sung of your bravery for generations.")
+    print("\n" + "🏆 " * 15)
+
+def ending_defeat():
+    """The losing ending."""
+    print("\n" + "💀 " * 15)
+    print("\n  *** GAME OVER ***")
+    print("  Your adventure ends here... for now.")
+    print("  Perhaps a wiser path awaits you next time.")
+    print("\n" + "💀 " * 15)
+
+# --- Start the game ---
+start()
