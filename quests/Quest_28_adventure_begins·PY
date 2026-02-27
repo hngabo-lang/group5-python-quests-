@@ -57,19 +57,19 @@ def explore_forest():
 
 def ending_victory():
     """The winning ending."""
-    print("\n" + "🏆 " * 15)
+    print("\n" + " " * 15)
     print("\n  *** VICTORY! ***")
     print("  You have claimed the treasure and saved the kingdom!")
     print("  Songs will be sung of your bravery for generations.")
-    print("\n" + "🏆 " * 15)
+    print("\n" + " " * 15)
 
 def ending_defeat():
     """The losing ending."""
-    print("\n" + "💀 " * 15)
+    print("\n" + " " * 15)
     print("\n  *** GAME OVER ***")
     print("  Your adventure ends here... for now.")
     print("  Perhaps a wiser path awaits you next time.")
-    print("\n" + "💀 " * 15)
+    print("\n" + " " * 15)
 
 # --- Start the game ---
 start()
