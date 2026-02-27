@@ -1,9 +1,9 @@
 # Ask the player which direction they want to go
-direction = input("You stand at a fork in the road. Do you go 'left' or 'right'? ").strip().lower()
+direction = input("choose Do you go 'left' or 'right'? ").strip().lower()
 
 if direction == "left":
     # If they go left, ask what they do next
-    action = input("You reach a rushing river! Do you 'swim' across or 'wait' for a boat? ").strip().lower()
+    action = input(" Do you 'swim' across or 'wait' for a boat? ").strip().lower()
 
     if action == "swim":
         # Swimming leads to treasure
