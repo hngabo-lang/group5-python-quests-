@@ -1,12 +1,8 @@
 # Group 5 python quests
-
 # Setup
-
-Make sure Python is installed:
-
+Make sure Python is installed
 checking: python --version
 # Quest Overview
-
 1. Variables & Printing Q1–Q5
 2. User Input & Basic Math Q6–Q10
 3. Conditional Statements Q11–Q15
